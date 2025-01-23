@@ -52,7 +52,7 @@ python3 AlignmentLengthChecker.py helobdella_GenEvol_dataset_aligned.fasta
 O script deve printar o comprimento do alinhamento.
 
 **2º Passo: Criar arquivo de particições**
-Em seguida, nós podemos criar um arquivo de texto, utilizando um o nano. Digite ```Nano``` e digite o texto abaixo, substituindo <comprimento> pelo comprimento do alinhamento:
+Em seguida, nós podemos criar um arquivo de texto, utilizando um o nano. Digite ```nano helobdella_partitions.txt``` e digite o texto abaixo, substituindo <comprimento> pelo comprimento do alinhamento:
 
 
 ```
@@ -78,6 +78,7 @@ No próximo passo nós utilizaremos o _IQTREE_ para realizar 3 etapas:
 O _IQTREE_ é bastante eficiente e faz estas três etapas com apenas uma linha de comando. Digite o seguinte comando e analise as ações que o software realiza:
 
 ```
+chmod 705 iqtree2
 ./iqtree2 -s helobdella_GenEvol_dataset_aligned.fasta -T 4 -p helobdella_partitions.txt -m TESTMERGE -mset mrbayes -ninit 1000 -B 1000 -wbt
 ```
 
