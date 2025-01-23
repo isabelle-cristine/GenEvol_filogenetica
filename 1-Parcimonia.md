@@ -261,6 +261,7 @@ O árquivo gerado é uma árvore com comprimento de ramos e valores de suporte. 
 
 Execute o script:
 ```
+chmod 705 tnt_tree_clean.sh
 ./tnt_tree_clean.sh
 ```
 
